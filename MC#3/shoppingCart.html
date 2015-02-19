@@ -8,7 +8,6 @@
 		<meta name="veiwport" content="wdith=device-width, initial-scale=1.0">
 		<script src="jquery-2.1.1.js"></script>
         <script>
-
             // YOUR JOB: When #comboBox is "changed", put the value of the selected option in the result div
             
 
@@ -48,8 +47,8 @@
             }//end of changeSelection()
 			
 			function totalAll(){
-				document.getElementById("total").innerHTML = "";
-				$('#total').append("Total: " + total);
+				document.getElementById("total").innerHTML = "";//clears previews total if there's any
+				$('#total').append("Total: " + total);//displays Total price
 			}//end of totalAll()
 		
 
@@ -57,7 +56,6 @@
 	</head>
 	
 	<body>
-		
 		<div class="addAndCheck">
 			<button onclick="changedSelect()" class="btn btn-custome">Add to Cart</button>
 			<button onclick="totalAll()" class="btn btn-custome">Check out</button>
