@@ -50,9 +50,8 @@ button{
 select{
 	display: block;
 	margin-top: 10px;
-	margin-left: 432px;
 	height: 34px;
-	width: 90px;
+	width: 100px;
 	background-color: grey;
 	color: white;
 	border: 1px solid #ccc;
@@ -65,18 +64,31 @@ select{
 }
 
 input{
-	position:absolute;
-	margin-left: 530px;
-	top: 100px;
+	margin-top:10px;
 }
 
-#quantity::-webkit-input-placeholder { color:#FFFFFF; }/*changes placeholder's text color*/
-
-.addAndCheck{
-	position: absolute;
-	margin-top: 10px;
-	margin-left: 690px;
+#main
+{
+    text-align:center;
 }
+
+#comboBoxAlign
+{
+    display: inline-block;/*aligns blocks side-by-side*/
+}
+#inputBoxAlign
+{
+    display: inline-block;/*aligns blocks side-by-side*/
+	padding-right:58px;
+}
+
+#addAndCheck{
+	display: inline-block;/*aligns blocks side-by-side*/
+}
+
+#quantity::-webkit-input-placeholder { 
+color:#FFFFFF; 
+}/*changes placeholder's text color*/
 
 .inputBox{
 	position: absolute;

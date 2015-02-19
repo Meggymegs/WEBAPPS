@@ -36,14 +36,23 @@
 					subtotal=10*qty; total=total+subtotal;
 					$('#result').append("Item: " + msg +"</br>Quantity: " + qty + "</br>Price:" + subtotal + "</br>========================================</br>");
 				}
+				else if(msg=="cream-oh"){
+					subtotal=15*qty; total=total+subtotal;
+					$('#result').append("Item: " + msg +"</br>Quantity: " + qty + "</br>Price:" + subtotal + "</br>========================================</br>");
+				}
 				else if(msg=="apple"){
 					subtotal=20*qty; total=total+subtotal;
+					$('#result').append("Item: " + msg +"</br>Quantity: " + qty + "</br>Price:" + subtotal + "</br>========================================</br>");
+				}
+				else if(msg=="coca cola"){
+					subtotal=25*qty; total=total+subtotal;
 					$('#result').append("Item: " + msg +"</br>Quantity: " + qty + "</br>Price:" + subtotal + "</br>========================================</br>");
 				}
 				else if(msg=="banana"){
 					subtotal=30*qty; total=total+subtotal;
 					$('#result').append("Item: " + msg +"</br>Quantity: " + qty + "</br>Price:" + subtotal + "</br>========================================</br>");
 				}
+		
             }//end of changeSelection()
 			
 			function totalAll(){
@@ -58,22 +67,29 @@
 	<body>
 		
 		<div align="center">
-			<h1>MAGIC SHOPPING CART</h1><br>
+			<br><h1>MAGIC SHOPPING CART</h1><br>
 		</div>
 		
-		<div class="addAndCheck">
-			<button onclick="changedSelect()" class="btn btn-custome">Add to Cart</button>
-			<button onclick="totalAll()" class="btn btn-custome">Check out</button>
-		</div><!--end of pull-right-->
+		<div id="main">
+			<div id="comboBoxAlign">
+				<select id="comboBox">
+					<option value="apple">Apple</option>
+					<option value="banana">Banana</option>
+					<option value="coca cola">Coca Cola</option>
+					<option value="cream-oh">Cream-oh</option>
+					<option value="orange">Orange</option>
+				</select>
+			</div>
+			<div id="inputBoxAlign">
+				<input id = "quantity" type="text" class="form-control" placeholder="Count" aria-describedby="basic-addon2">
+			</div>
+			
+			<div id="addAndCheck">
+				<button onclick="changedSelect()" class="btn btn-custome">Add to Cart</button>
+				<button onclick="totalAll()" class="btn btn-custome">Check out</button>
+			</div><!--end of pull-right-->
+		</div><!--end of main block-->
 		
-		<select id="comboBox">
-			<option value="apple">apple</option>
-			<option value="orange">orange</option>
-			<option value="banana">banana</option>
-		</select>
-		
-		<input id = "quantity" type="text" class="form-control" placeholder="Count" aria-describedby="basic-addon2">
-	
 		<div id="result"><!--show results here--></div><!--end of scrollable div-->
 		<div id="total"><!--displays total--></div>
 		
