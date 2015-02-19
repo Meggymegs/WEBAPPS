@@ -1,0 +1,9 @@
+div {
+display: block;
+}
+
+p.name{
+	font-family: Verdana;
+	font-size: 19;
+	font-weight: bold;
+}

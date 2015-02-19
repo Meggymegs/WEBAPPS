@@ -1,0 +1,107 @@
+div {
+display: block;
+}
+
+body.theBody{
+	 background-color: #00BFFF;
+}
+
+.back{
+	position: relative;
+	text-align:center;
+}
+
+.acback{
+	position: relative;
+	top:30px;
+	text-align:center;
+}
+
+#background{
+	width: 100%; 
+    height: 115%; 
+    position: fixed; 
+    left: 0px; 
+    top: 0px; 
+    z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
+}
+
+.fit{
+    width:100%;
+    height:100%;
+}
+
+.innerBox
+{
+   /*box-shadow: 0px 0px 0px rgba(0,0,0,15);*/
+   border-radius: 10px;
+   box-shadow: 0px 20px 100px rgba(0,0,0,15);
+   margin-right:auto;
+   margin-left:auto;
+   position: relative;
+   width: 1200px; /*1011px*/
+   height: 100%;
+}
+
+.innerBox2
+{
+   /*box-shadow: 0px 0px 0px rgba(0,0,0,15);*/
+   border-radius: 10px;
+   box-shadow: 0px 20px 100px rgba(0,0,0,15);
+   margin-right:auto;
+   margin-left:auto;
+   position: relative;
+   width: 800px; /*1011px*/
+   height: 100%;
+}
+
+.textContent{
+	font-family: Verdana;
+	font-size: 19;
+	color: #F2F2F2; /*#D8D8D8*/
+	font-weight: bold;
+	
+}
+
+.acadText{
+	font-family: Verdana;
+	font-size: 19;
+	font-weight: bold;
+}
+
+.contacts{
+	font-family: Verdana;
+	font-size: 19;
+	font-weight: bold;
+}
+
+p.text{
+	width:30em;
+	word-wrap: break-word;
+}
+
+p.idNom{
+	position: relative;
+	right: 240px;
+	bottom:500px;
+}
+
+p.course{
+	position: relative;
+	left: 220px;
+	bottom:538px;
+}
+
+p.contactText{
+	font-size:15px;
+}
+
+table.sched{
+	position: relative;
+	bottom:500px;
+}
+
+h2.schedi{
+	position:relative;
+	bottom: 515px;
+}
