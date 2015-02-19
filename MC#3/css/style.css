@@ -67,13 +67,14 @@ select{
 input{
 	position:absolute;
 	margin-left: 530px;
-	top: 10px;
+	top: 100px;
 }
 
 #quantity::-webkit-input-placeholder { color:#FFFFFF; }/*changes placeholder's text color*/
 
 .addAndCheck{
 	position: absolute;
+	margin-top: 10px;
 	margin-left: 690px;
 }
 
@@ -85,7 +86,7 @@ input{
 
 .btn {
   display: inline-block;
-  padding: 3px 12px;
+  padding: 2px 12px;
   margin-bottom: 0;
   font-size: 14px;
   font-weight: normal;
